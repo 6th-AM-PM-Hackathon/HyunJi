@@ -1,0 +1,253 @@
+@import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'GmarketSansMedium';
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  body {
+    margin: 0;
+    min-width: 992px;
+    font-family: "Helvetica";
+  }
+
+  .navbar{
+    margin-top: 10px;
+    height: 60px;
+    padding-left: 30px;
+  }
+  
+  .logo{
+    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 12%;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 70px;
+  }
+
+  .search-box {
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 0 10px;
+    border: 1px solid #ff8cc2;
+    display: flex;
+    align-items: center; 
+  }
+
+  .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    color: #797979;
+    font-size: 13px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .search-btn {
+    color: #ff8cc2;
+    float: right;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar2 ul{
+    float: right;
+  }
+  
+  .navbar li{
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: black;
+    font-style: bold;
+    font-size: 13px;
+  }
+
+  .menu {
+    width: 167%;
+    overflow: hidden;
+    margin-top: 150px;
+    margin-bottom: 70px;
+  }
+
+  .menu li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ff52a3;
+  }
+
+  .menu a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .submenu > li {
+    line-height: 50px;
+    background-color: #ff8cc2;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    display: flex;
+  }
+
+  .submenu {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .menu > li:hover {
+    background-color: #ff8cc2;
+    transition-duration: 1s;
+  }
+  
+  .menu > li:hover .submenu {
+    max-height: 500px;
+    transition-duration: 1s;
+  }
+
+  .submenu > li:hover {
+    background-color: #ff52a3;
+    transition-duration: 0.5s;
+  }
+  
+  body h1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-style: bold;
+    color: #ff8cc2;
+  }
+  
+  .products {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 740px;
+    text-align: center;
+  }
+  
+  .products img{
+    width: 225px;
+    height: 225px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .products a{
+    text-decoration: none;
+    color: black;
+    float: left;
+    font-size: 16px;
+  }
+  
+  .price{
+    margin-top: 4px;
+    margin-bottom: 80px;
+  }
+  
+  .clearfix{
+    clear: both;
+  }
+  
+  .footer{
+    text-align: left;
+    opacity: 0.9;
+    margin-left: 20px;
+  }
+
+  .footer p {
+    color: gray;
+    opacity: 0.9;
+    font-size: 11px;
+    margin-top: 7px;
+  }
+  
+  .swiper-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.swiper-container a {
+    color: black;
+    font-size: 16px;   
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(255, 0, 119) !important;
+  top: auto !important;
+  bottom: 15%;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+}
+
+.swiper-pagination-bullet {
+    background: rgb(255, 0, 119) !important;
+    margin-bottom: 50px !important;
+  }
