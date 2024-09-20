@@ -47,6 +47,42 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+    margin-bottom: 70px;
+  }
+
+  .search-box {
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 0 10px;
+    border: 1px solid #ff8cc2;
+    display: flex;
+    align-items: center; 
+  }
+
+  .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    color: #797979;
+    font-size: 13px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .search-btn {
+    color: #ff8cc2;
+    float: right;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .navbar2 ul{
@@ -131,119 +167,39 @@
     font-style: bold;
     color: #ff8cc2;
   }
- 
-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.wrapper {
-  width: 400px;
-  padding: 40px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
-  margin: 0 auto;
-}
- 
-.wrapper .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-.wrapper .nav .current-date {
-  font-size: 24px;
-  font-weight: 600;
-}
-.wrapper .nav button {
-  width: 38px;
-  height: 38px;
-  font-size: 30px;
-  color: #878787;
-}
-
-.calendar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-  .calendar ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
+  
+  .products {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 740px;
     text-align: center;
-    width: 100%;
   }
-  .calendar .weeks li {
-    font-weight: 500;
-  }
-  .calendar .days {
+  
+  .products img{
+    width: 225px;
+    height: 225px;
+    margin-right: 20px;
     margin-bottom: 20px;
   }
-  .calendar ul li {
-    width: calc(100% / 7);
-    position: relative;
+  
+  .products a{
+    text-decoration: none;
+    color: black;
+    float: left;
+    font-size: 16px;
   }
-  .calendar .days li {
-    z-index: 1;
-    margin-top: 30px;
-    cursor: pointer;
-    position: relative;
+  
+  .price{
+    margin-top: 4px;
+    margin-bottom: 80px;
   }
-   
-  .days li.inactive {
-    color: #aaa;
+  
+  .clearfix{
+    clear: both;
   }
-
-  .days li.active {
-    color: #fff;
-  }
-  .calendar .days li::before {
-    position: absolute;
-    content: '';
-    height: 40px;
-    width: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: -1;
-  }
-  .days li:hover::before {
-    background: #ff52a3;
-  }
-  .days li.active::before {
-    background: #f2f2f2;
-  }
-
-  .tooltip {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.75);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-    bottom: calc(100% + 5px);
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    visibility: hidden;
-    opacity: 0; 
-    transition: opacity 0.2s ease-in-out; 
-}
-
-.days li:hover .tooltip {
-    visibility: visible; 
-    opacity: 1;
-}
-
+  
   .footer{
-    margin-top: 5%;
     text-align: left;
     opacity: 0.9;
     margin-left: 20px;
@@ -256,4 +212,42 @@ button {
     margin-top: 7px;
   }
   
-  
+  .swiper-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.swiper-container a {
+    color: black;
+    font-size: 16px;   
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(255, 0, 119) !important;
+  top: auto !important;
+  bottom: 15%;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+}
+
+.swiper-pagination-bullet {
+    background: rgb(255, 0, 119) !important;
+    margin-bottom: 50px !important;
+  }
