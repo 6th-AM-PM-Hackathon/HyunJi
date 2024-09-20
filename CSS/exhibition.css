@@ -171,15 +171,16 @@
   .products {
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
-    width: 740px;
+    padding: 10;
+    width: 1000px;
     text-align: center;
   }
   
   .products img{
-    width: 225px;
-    height: 225px;
-    margin-right: 20px;
+    width: 200px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 20px;
   }
   
@@ -187,7 +188,9 @@
     text-decoration: none;
     color: black;
     float: left;
-    font-size: 16px;
+    font-size: 12px;
+    margin-right: 50px;
+    margin-left: 25px;
   }
   
   .price{

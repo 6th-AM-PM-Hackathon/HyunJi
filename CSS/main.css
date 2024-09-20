@@ -171,7 +171,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    width: 740px;
+    width: 690px;
     text-align: center;
   }
   
@@ -229,7 +229,7 @@
 }
 
 .swiper-slide img {
-    width: 100%;
+    width: 45%;
     height: auto;
 }
 
@@ -248,5 +248,5 @@
 
 .swiper-pagination-bullet {
     background: rgb(255, 0, 119) !important;
-    margin-bottom: 50px !important;
+    margin-bottom: -175px !important;
   }
