@@ -1,65 +1,183 @@
- /*#1 */
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
- 
- /*#2 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+@import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'GmarketSansMedium';
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  body {
+    margin: 0;
+    min-width: 992px;
+    font-family: "Helvetica";
+  }
+
+  .navbar{
+    margin-top: 10px;
+    height: 60px;
+    padding-left: 30px;
+  }
+  
+  .logo{
+    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 12%;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .navbar2 ul{
+    float: right;
+  }
+  
+  .navbar li{
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: black;
+    font-style: bold;
+    font-size: 13px;
+  }
+
+  .menu {
+    width: 167%;
+    overflow: hidden;
+    margin-top: 150px;
+    margin-bottom: 70px;
+  }
+
+  .menu li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ff52a3;
+  }
+
+  .menu a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .submenu > li {
+    line-height: 50px;
+    background-color: #ff8cc2;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    display: flex;
+  }
+
+  .submenu {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .menu > li:hover {
+    background-color: #ff8cc2;
+    transition-duration: 1s;
+  }
+  
+  .menu > li:hover .submenu {
+    max-height: 500px;
+    transition-duration: 1s;
+  }
+
+  .hero_header{
+    height: 450px;
+    width: 100%;
+  }
+  
+  body h1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-style: bold;
+    color: #ff8cc2;
+  }
  
- /*#3 */
 button {
-  /* button 요소에 기본적으로 설정되는 스타일 속성 초기화 */
   border: none;
   outline: none;
   background-color: transparent;
   padding: 0;
   cursor: pointer;
 }
+
+.wrapper {
+  width: 400px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto;
+}
  
- /*#4 */
-body {
+.wrapper .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #e183ac;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.wrapper .nav .current-date {
+  font-size: 24px;
+  font-weight: 600;
+}
+.wrapper .nav button {
+  width: 38px;
+  height: 38px;
+  font-size: 30px;
+  color: #878787;
 }
 
-/*#5 */
-.wrapper {
-    width: 450px;
-    background: #fff;
-    border-radius: 10px;
-    padding: 25px;
-  }
-   
-  /*#6*/
-  .wrapper .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-  .wrapper .nav .current-date {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .wrapper .nav button {
-    width: 38px;
-    height: 38px;
-    font-size: 30px;
-    color: #878787;
-  }
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  /*#7*/
-.calendar ul {
+  .calendar ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     text-align: center;
+    width: 100%;
   }
   .calendar .weeks li {
     font-weight: 500;
@@ -68,19 +186,16 @@ body {
     margin-bottom: 20px;
   }
   .calendar ul li {
-    /*#8*/
     width: calc(100% / 7);
-    /*#9*/
     position: relative;
   }
   .calendar .days li {
-    /*#10*/
     z-index: 1;
     margin-top: 30px;
     cursor: pointer;
+    position: relative;
   }
    
-  /*#11*/
   .days li.inactive {
     color: #aaa;
   }
@@ -100,8 +215,45 @@ body {
     z-index: -1;
   }
   .days li:hover::before {
-    background: #f2f2f2;
+    background: #ff52a3;
   }
   .days li.active::before {
-    background: #008aff;
+    background: #f2f2f2;
   }
+
+  .tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0; 
+    transition: opacity 0.2s ease-in-out; 
+}
+
+.days li:hover .tooltip {
+    visibility: visible; 
+    opacity: 1;
+}
+
+  .footer{
+    margin-top: 5%;
+    text-align: left;
+    opacity: 0.9;
+    margin-left: 20px;
+  }
+
+  .footer p {
+    color: gray;
+    opacity: 0.9;
+    font-size: 11px;
+    margin-top: 7px;
+  }
+  
+  
