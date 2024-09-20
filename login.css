@@ -1,0 +1,81 @@
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+.login {
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.login > h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#login > input {
+    width: 100%;
+    height: 48px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: rgb(236, 236, 236);
+}
+
+#login > input::placeholder {
+    color: rgb(168, 168, 168);
+}
+
+#login > input[type="button"] {
+    color: #fff;
+    font-size: 16px;
+    background-color: #e98db3;
+    margin-top: 20px;
+}
+
+#login > input[type="checkbox"] {
+    display: none;
+}
+
+#login > label {
+    color: rgb(225, 255, 227);
+}
+
+#login input[type="checkbox"] + label {
+    cursor: pointer;
+    padding-left: 26px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.option {
+    text-align: center;
+}
+
+.option ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.option li {
+    margin: 0 10px;
+}
+
+.option a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: #000; /* 링크 색상 조정 */
+}

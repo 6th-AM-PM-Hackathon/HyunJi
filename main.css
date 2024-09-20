@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  body {
+    margin: 0;
+    min-width: 992px;
+    font-family: "Helvetica";
+  }
+  
+  .navbar{
+    margin-top: 10px;
+    height: 60px;
+    padding-left: 30px;
+  }
+  
+  .logo{
+    line-height: 60px;
+    float: left;
+  }
+  
+  .logo img{
+    vertical-align: middle;
+  }
+
+  .navbar2 ul{
+    float: right;
+  }
+  
+  .navbar li{
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: black;
+    font-style: bold;
+    font-size: 13px;
+  }
+
+  .menu {
+    width: 167%;
+    overflow: hidden;
+    margin: 150px auto;
+  }
+
+  .menu li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ff52a3;
+  }
+
+  .menu a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .submenu > li {
+    line-height: 50px;
+    background-color: #ff8cc2;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    display: flex;
+  }
+
+  .submenu {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .menu > li:hover {
+    background-color: #ff8cc2;
+    transition-duration: 1s;
+  }
+  
+  .menu > li:hover .submenu {
+    max-height: 500px;
+    transition-duration: 1s;
+  }
+
+  .hero_header{
+    height: 450px;
+    width: 100%;
+  }
+  
+  body h1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-style: bold;
+    color: #ff8cc2;
+  }
+  
+  .products {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 740px;
+    text-align: center;
+  }
+  
+  .products img{
+    width: 225px;
+    height: 225px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .products a{
+    text-decoration: none;
+    color: black;
+    float: left;
+    font-size: 16px;
+  }
+  
+  .price{
+    margin-top: 4px;
+    margin-bottom: 80px;
+  }
+  
+  .clearfix{
+    clear: both;
+  }
+  
+  .footer{
+    text-align: center;
+  }
+  
+  .footer img{
+    margin-top: 40px;
+    height: 20px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
