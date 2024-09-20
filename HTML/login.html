@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"></html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +7,21 @@
     <title>ALL-UP</title>
     <link rel="stylesheet" href="../CSS/login.css">
 </head>
+<body>
     <div class="login">
         <h2>로그인</h2>
         <form method="post" action="" id="login">
-            <input type="text" name="ID" placeholder="ID">
-            <input type="password" name="password" placeholder="Password">
+            <input type="text" name="ID" placeholder="ID" required>
+            <input type="password" name="password" placeholder="Password" required>
             <div class="option">
                 <ul>
-                    <li><a href="#" onclick="location.href='login.html'">아이디 찾기</a></li>
-                    <li><a href="#" onclick="location.href='login.html'">비밀번호 찾기</a></li>
-                    <li><a href="#" onclick="location.href='login.html'">회원가입</a></li>
+                    <li><a href="#">아이디 찾기</a></li>
+                    <li><a href="#">비밀번호 찾기</a></li>
+                    <li><a href="#">회원가입</a></li>
                 </ul>
             </div>
             <input type="button" value="로그인" onclick="location.href='main.html'">
         </form>
     </div>
 </body>
-
+</html>

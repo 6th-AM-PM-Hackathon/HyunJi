@@ -1,37 +1,60 @@
+@import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'GmarketSansMedium';
+}
+
 li {
     list-style: none;
 }
 
 body {
-    font-size: 14px;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #ffcbe4;
 }
 
 .login {
     width: 400px;
-    height: 350px;
     padding: 40px;
-    box-sizing: border-box;
+    background: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
 }
 
 .login > h2 {
     font-size: 24px;
-    color: black;
+    color: #333; 
     margin-bottom: 20px;
+    text-align: center; 
 }
 
 #login > input {
     width: 100%;
     height: 48px;
-    padding: 0px 10px;
-    box-sizing: border-box;
+    padding: 0 10px;
     margin-bottom: 16px;
     border-radius: 6px;
     background-color: rgb(236, 236, 236);
+    border: 1px solid #ddd; 
+    transition: border 0.3s; 
+}
+
+#login > input:focus {
+    border: 1px solid #ff8cc2;
+    outline: none; 
 }
 
 #login > input::placeholder {
@@ -41,23 +64,15 @@ body {
 #login > input[type="button"] {
     color: #fff;
     font-size: 16px;
-    background-color: #e98db3;
+    background-color: #ff8cc2;
     margin-top: 20px;
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
-#login > input[type="checkbox"] {
-    display: none;
-}
-
-#login > label {
-    color: rgb(225, 255, 227);
-}
-
-#login input[type="checkbox"] + label {
-    cursor: pointer;
-    padding-left: 26px;
-    background-repeat: no-repeat;
-    background-size: contain;
+#login > input[type="button"]:hover {
+    background-color: #ff8cc2; 
 }
 
 .option {
@@ -66,7 +81,7 @@ body {
 
 .option ul {
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0; 
     display: flex;
     justify-content: center;
 }
@@ -76,6 +91,12 @@ body {
 }
 
 .option a {
-    text-decoration: none; /* 링크의 밑줄 제거 */
-    color: #000; /* 링크 색상 조정 */
+    font-size: 14px;
+    text-decoration: none; 
+    color: #ff8cc2; 
+    transition: color 0.3s; 
+}
+
+.option a:hover {
+    color: #ff52a3;
 }

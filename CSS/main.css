@@ -1,7 +1,17 @@
+@import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'GmarketSansMedium';
   }
 
   li {
@@ -18,7 +28,7 @@
     min-width: 992px;
     font-family: "Helvetica";
   }
-  
+
   .navbar{
     margin-top: 10px;
     height: 60px;
@@ -27,11 +37,10 @@
   
   .logo{
     line-height: 60px;
-    float: left;
-  }
-  
-  .logo img{
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 12%;
   }
 
   .search {
@@ -95,7 +104,8 @@
   .menu {
     width: 167%;
     overflow: hidden;
-    margin: 150px auto;
+    margin-top: 150px;
+    margin-bottom: 70px;
   }
 
   .menu li {
@@ -238,4 +248,5 @@
 
 .swiper-pagination-bullet {
     background: rgb(255, 0, 119) !important;
+    margin-bottom: 50px !important;
   }
